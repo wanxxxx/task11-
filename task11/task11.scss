@@ -1,0 +1,49 @@
+html,body{
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+	font-family: 黑体;
+	background: #E9E9E9;
+ }
+$blue:#5fc0cd;
+
+ @mixin flex($a:center,$j:center,$h:80px,$w:100vw){
+ 	display: flex;
+ 	align-items:$a;
+	justify-content: $j;
+	height: $h;
+	width: $w;
+	color: #fff;
+	
+ }
+ .header{
+ 	@include flex($j:space-around);
+	background: $blue;
+ }
+ .a1{
+ 	@include flex(center,flex-start,60px);
+	margin: 30px 0; 
+	border: 1px solid #c4c4c4;
+	background: #fff;
+
+ }
+img,input{
+	display: inline-block;
+	margin-left: 32px;
+	border: 0;
+	outline:none;
+}
+.e{
+	@include flex($w:80vw);
+	background: $blue;
+	border-radius: 10px;
+	margin-left: 10vw;
+}
+.h{
+    border:0;
+	outline:none;
+	background: none;
+	float: right;
+	right: 5vw;
+	color: $blue
+}
