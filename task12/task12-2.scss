@@ -1,0 +1,113 @@
+/* Scss Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	padding:0; 
+	margin:0;
+	overflow-x: hidden;
+	color: #c4c4c4;
+
+}
+$blue:#5fc0cd;
+$border:1px solid #c4c4c4;
+@mixin ziti ($fs:16px,$fc:#c4c4c4) {
+	font-size: $fs;
+	color:$fc;
+	font-family: 黑体;
+}
+@mixin flex($ali:center,$jus:center,$width:100vw){
+	display: flex;
+	align-items: $ali;
+	justify-content: $jus;
+	width: $width;
+	
+}
+@mixin abs ($top:60px){
+	position: absolute;
+	top:$top
+}
+
+.header{
+	background: #5fc0cd;
+	position: fixed;
+	z-index: 1;
+	color: white;
+	
+	
+	>div{
+		@include flex($jus:space-around);
+		border-bottom: $border;
+		height: 60px;
+		
+
+		
+	
+	button {
+		border-radius: 5px;
+		border: 0px;
+		margin: 0 -3%;
+		height: 45px;
+		width: 20vw;
+		background: #55a8b3;
+		@include ziti (16px,white);
+		}
+	
+
+   .button2 {
+	   color: #5fc0cd;
+	   background:white;
+
+		}
+		
+	 select{
+		width: (100vw/3);
+		height: 60px;
+		border: none;
+		border-right: $border;
+		 padding-left: 10vw;
+		 @include ziti ;
+
+		 
+}	
+		
+	}}
+
+main{
+	@include abs(120px);
+	padding: 0 5vw;
+	@include ziti ;
+
+		
+		
+   >div{
+	   padding: 16px 0;
+	   border-bottom: $border;
+	>div{
+		   @include flex($jus:space-between);
+	   width: 90vw;
+		p{
+		white-space: nowrap;}
+		   >div{
+				@include flex($jus:none)		 
+					}
+	   }
+	}
+}
+.p1{
+	width: 50%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.zhanwei {
+	height: 60px;}
+  
+
+.footer{
+	background:white;
+	position: fixed;
+	bottom:0;
+	height: 60px;
+	@include flex($jus:space-around);
+	  }

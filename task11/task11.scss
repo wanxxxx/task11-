@@ -3,7 +3,7 @@ html,body{
 	margin:0;
 	overflow-x:hidden;
 	font-family: 黑体;
-	background: #E9E9E9;
+	background: #F0F0F0;
  }
 $blue:#5fc0cd;
 
@@ -26,24 +26,50 @@ $blue:#5fc0cd;
 	border: 1px solid #c4c4c4;
 	background: #fff;
 
- }
+
 img,input{
 	display: inline-block;
 	margin-left: 32px;
 	border: 0;
 	outline:none;
-}
-.e{
-	@include flex($w:80vw);
+} }
+.b{
+	@include flex($h:60px,$w:80vw);
 	background: $blue;
 	border-radius: 10px;
 	margin-left: 10vw;
 }
 .h{
-    border:0;
-	outline:none;
-	background: none;
-	float: right;
-	right: 5vw;
-	color: $blue
+	margin: 10px;
+	@include flex (center,space-between,none,none);
+	color: #c4c4c4;
 }
+.c{
+	@include flex ;
+	color: #c4c4c4;
+	white-space: nowrap;
+	font-size: 14px;
+		margin-top:60px;
+
+	span{
+		width: 30vw;
+		height: 1px;
+		background: #c4c4c4;
+	}
+	
+}
+.d{
+ 	@include flex($j:space-between,$w:66vw);
+	margin-left: 17vw;
+	
+	div{
+	@include flex($h:none,$w:none);
+		flex-direction: column;
+        color:black;
+			font-size: 14px;
+
+	}
+	}
+
+
+

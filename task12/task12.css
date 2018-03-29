@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* Scss Document */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 黑体; }
+
+.header, .footer {
+  background: #5fc0cd;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 60px;
+  color: #fff; }
+  .header a, .footer a {
+    color: #fff;
+    text-decoration: none; }
+  .header p, .footer p {
+    margin: 0 2.5%; }
+
+.img1 {
+  position: absolute;
+  top: 60px;
+  width: 100vw;
+  height: 180px;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: white; }
+  .img1 > div {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: none;
+    height: none;
+    transform: translate(20%, -50%); }
+    .img1 > div > div {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2vw; }
+    .img1 > div > div > div > p {
+      display: inline-block; }
+
+.main {
+  position: absolute;
+  top: 240px;
+  font-size: 80%; }
+  .main > div {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    width: 100vw;
+    height: none;
+    flex-direction: row;
+    border-bottom: 1px solid #c4c4c4; }
+    .main > div span {
+      background: #5fc0cd;
+      width: 4px;
+      height: 18px;
+      margin: 0 20px; }
+  .main .c {
+    width: 90vw;
+    margin-left: 5vw; }
+    .main .c > div {
+      color: #c4c4c4;
+      width: 70px; }
+      .main .c > div p {
+        display: inline-block; }
+    .main .c > span {
+      background: #c4c4c4;
+      width: 2px;
+      height: 15px; }
+    .main .c > p {
+      width: 70%; }
+
+.zhanwei {
+  height: 60px; }
+
+.footer {
+  bottom: 0;
+  background: white;
+  font-size: 80%; }
+  .footer button {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #5fc0cd;
+    border-radius: 5px;
+    margin: 0 2.5%;
+    font-weight: bold;
+    background: white;
+    color: #5fc0cd; }
+  .footer .botton1 {
+    background: #5fc0cd;
+    color: white; }
+
+/*# sourceMappingURL=task5.css.map */
+
+/*# sourceMappingURL=task12.css.map */

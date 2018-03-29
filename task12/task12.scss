@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* Scss Document */
+
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 黑体; 
+}
+
+$blue:#5fc0cd;
+
+@mixin flex($ali:center,$jus:center,$width:100vw,$height:60px){
+	display: flex;
+	align-items: $ali;
+	justify-content: $jus;
+	width: $width;
+	height: $height;
+	
+}
+@mixin abs ($top:60px){
+	position: absolute;
+	top:$top
+}
+
+
+
+
+.header {
+  	background: $blue;
+ 	position: fixed;
+  	z-index: 1;
+	@include flex($jus:space-between);
+	color: #fff;
+	
+	
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
+	p{
+				margin: 0 2.5%;
+
+	}
+}
+
+.img1 {
+	@include abs;
+  	width: 100vw;
+	height: 180px;
+  	overflow: hidden;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+	color: white;
+
+	
+	>div{
+		@include abs (50%);
+		@include flex($width:none,$height:none);
+		transform: translate(20%, -50%);
+		>div{
+		display: flex;
+		flex-direction: column;
+			margin: 0 2vw;
+		}
+		>div>div>p {
+			display: inline-block;
+			
+	}
+}			
+}
+
+.main {
+	@include abs(240px);
+			 font-size: 80%;
+	>div{
+		@include flex (center,none,100vw,none);
+		flex-direction: row;
+		border-bottom: 1px solid #c4c4c4;
+	
+	span{
+		background: $blue;
+		width: 4px;
+		height: 18px;
+		margin: 0 20px;
+		}
+	}
+
+	 .c{
+		width: 90vw;
+		 margin-left: 5vw;
+
+		 >div{
+			 color: #c4c4c4;
+			 width: 70px;
+			 p{
+				 display: inline-block;
+			 }
+		 }
+		>span{
+		background: #c4c4c4;
+		width: 2px;
+		height: 15px;
+		}
+		 >p{
+			 width: 70%;
+			 
+		 }
+	}
+		
+}
+	
+.zhanwei {
+  height: 60px;
+}
+
+
+
+
+.footer {
+	@extend .header;
+	bottom: 0;
+	background: white;
+	font-size: 80%;
+	
+	button{
+		width:45%;
+		height: 50px;
+  		border: 2px solid #5fc0cd;
+  		border-radius: 5px;
+		margin: 0 2.5%;
+	font-weight: bold;
+	background: white;
+  color: #5fc0cd;
+	}
+
+
+.botton1 {
+  background: #5fc0cd;
+  color: white;
+	}
+
+}
+/*# sourceMappingURL=task5.css.map */

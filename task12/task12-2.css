@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* Scss Document */
+/* CSS Document */
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: #c4c4c4; }
+
+.header {
+  background: #5fc0cd;
+  position: fixed;
+  z-index: 1;
+  color: white; }
+  .header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    border-bottom: 1px solid #c4c4c4;
+    height: 60px; }
+    .header > div button {
+      border-radius: 5px;
+      border: 0px;
+      margin: 0 -3%;
+      height: 45px;
+      width: 20vw;
+      background: #55a8b3;
+      font-size: 16px;
+      color: white;
+      font-family: 黑体; }
+    .header > div .button2 {
+      color: #5fc0cd;
+      background: white; }
+    .header > div select {
+      width: 33.3333333333vw;
+      height: 60px;
+      border: none;
+      border-right: 1px solid #c4c4c4;
+      padding-left: 10vw;
+      font-size: 16px;
+      color: #c4c4c4;
+      font-family: 黑体; }
+
+main {
+  position: absolute;
+  top: 120px;
+  padding: 0 5vw;
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: 黑体; }
+  main > div {
+    padding: 16px 0;
+    border-bottom: 1px solid #c4c4c4; }
+    main > div > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100vw;
+      width: 90vw; }
+      main > div > div p {
+        white-space: nowrap; }
+      main > div > div > div {
+        display: flex;
+        align-items: center;
+        justify-content: none;
+        width: 100vw; }
+
+.p1 {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.zhanwei {
+  height: 60px; }
+
+.footer {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw; }
+
+/*# sourceMappingURL=task12-2.css.map */
