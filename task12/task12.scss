@@ -83,34 +83,43 @@ $blue:#5fc0cd;
 		flex-direction: row;
 		border-bottom: 1px solid #c4c4c4;
 	
-	span{
+	.a span{
 		background: $blue;
 		width: 4px;
 		height: 18px;
 		margin: 0 20px;
 		}
 	}
-
-	 .c{
+	.ac{
 		width: 90vw;
 		 margin-left: 5vw;
+		 p{
+			display: inline-block;
+				 }
+		
+		
+		
+	}
+	 .c{
+		@extend .ac;
+
 
 		 >div{
 			 color: #c4c4c4;
-			 width: 70px;
-			 p{
-				 display: inline-block;
-			 }
+			 margin-right: 20px;
+			 width: 55px;	
+			 white-space: nowrap
 		 }
 		>span{
 		background: #c4c4c4;
-		width: 2px;
+		width: 1.2px;
 		height: 15px;
+		margin-right: 20px;
 		}
 		 >p{
-			 width: 70%;
-			 
+			 width: 70vw;
 		 }
+ 
 	}
 		
 }

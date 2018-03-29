@@ -61,25 +61,28 @@ html, body {
     height: none;
     flex-direction: row;
     border-bottom: 1px solid #c4c4c4; }
-    .main > div span {
+    .main > div .a span {
       background: #5fc0cd;
       width: 4px;
       height: 18px;
       margin: 0 20px; }
-  .main .c {
+  .main .ac, .main .c {
     width: 90vw;
     margin-left: 5vw; }
-    .main .c > div {
-      color: #c4c4c4;
-      width: 70px; }
-      .main .c > div p {
-        display: inline-block; }
-    .main .c > span {
-      background: #c4c4c4;
-      width: 2px;
-      height: 15px; }
-    .main .c > p {
-      width: 70%; }
+    .main .ac p, .main .c p {
+      display: inline-block; }
+  .main .c > div {
+    color: #c4c4c4;
+    margin-right: 20px;
+    width: 55px;
+    white-space: nowrap; }
+  .main .c > span {
+    background: #c4c4c4;
+    width: 1.2px;
+    height: 15px;
+    margin-right: 20px; }
+  .main .c > p {
+    width: 70vw; }
 
 .zhanwei {
   height: 60px; }
