@@ -46,13 +46,14 @@ html, body {
       display: flex;
       flex-direction: column;
       margin: 0 2vw; }
-    .img1 > div > div > div > p {
-      display: inline-block; }
+    .img1 > div p {
+      display: inline-block;
+      line-height: 4px; }
 
 .main {
   position: absolute;
   top: 240px;
-  font-size: 80%; }
+  font-size: 90%; }
   .main > div {
     display: flex;
     align-items: center;
@@ -61,11 +62,11 @@ html, body {
     height: none;
     flex-direction: row;
     border-bottom: 1px solid #c4c4c4; }
-    .main > div .a span {
-      background: #5fc0cd;
-      width: 4px;
-      height: 18px;
-      margin: 0 20px; }
+  .main .a > span {
+    background: #5fc0cd;
+    width: 4px;
+    height: 18px;
+    margin: 0 20px; }
   .main .ac, .main .c {
     width: 90vw;
     margin-left: 5vw; }
@@ -74,7 +75,6 @@ html, body {
   .main .c > div {
     color: #c4c4c4;
     margin-right: 20px;
-    width: 55px;
     white-space: nowrap; }
   .main .c > span {
     background: #c4c4c4;
@@ -83,9 +83,9 @@ html, body {
     margin-right: 20px; }
   .main .c > p {
     width: 70vw; }
-
-.zhanwei {
-  height: 60px; }
+  .main .zhanwei {
+    height: 60px;
+    border: none; }
 
 .footer {
   bottom: 0;

@@ -68,28 +68,30 @@ $blue:#5fc0cd;
 		flex-direction: column;
 			margin: 0 2vw;
 		}
-		>div>div>p {
+		
+		p {
 			display: inline-block;
+			line-height: 4px
 			
-	}
+	}}
 }			
-}
+
 
 .main {
 	@include abs(240px);
-			 font-size: 80%;
+			 font-size: 90%;
 	>div{
 		@include flex (center,none,100vw,none);
 		flex-direction: row;
-		border-bottom: 1px solid #c4c4c4;
+		border-bottom: 1px solid #c4c4c4;}
 	
-	.a span{
+	.a>span{
 		background: $blue;
 		width: 4px;
 		height: 18px;
 		margin: 0 20px;
 		}
-	}
+	
 	.ac{
 		width: 90vw;
 		 margin-left: 5vw;
@@ -97,36 +99,34 @@ $blue:#5fc0cd;
 			display: inline-block;
 				 }
 		
-		
-		
 	}
 	 .c{
 		@extend .ac;
 
 
-		 >div{
+			 >div{
 			 color: #c4c4c4;
 			 margin-right: 20px;
-			 width: 55px;	
 			 white-space: nowrap
 		 }
-		>span{
-		background: #c4c4c4;
-		width: 1.2px;
-		height: 15px;
-		margin-right: 20px;
-		}
-		 >p{
-			 width: 70vw;
-		 }
+			>span{
+			background: #c4c4c4;
+			width: 1.2px;
+			height: 15px;
+			margin-right: 20px;
+			}
+			 >p{
+				 width: 70vw;
+		 	}
  
 	}
+.zhanwei {
+  height: 60px;
+	border: none;
+}
 		
 }
 	
-.zhanwei {
-  height: 60px;
-}
 
 
 

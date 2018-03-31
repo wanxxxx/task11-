@@ -1,0 +1,16 @@
+$blue:#5fc0cd;
+@mixin flex($ali:center,$jus:center,$w:100vw,$h:60px){
+	display: flex;
+	align-items: $ali;
+	justify-content: $jus;
+	width: $w;
+	height: $h;
+	
+}
+@mixin abs ($top:60px){
+	position: absolute;
+	top:$top;
+}
+$border:1px solid #c4c4c4;
+/* Scss Document */
+

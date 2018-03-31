@@ -40,9 +40,11 @@ img,input{
 	margin-left: 10vw;
 }
 .h{
-	margin: 10px;
-	@include flex (center,space-between,none,none);
+	margin: 20px 0;
+	@include flex (center,space-between,none,80vw);
 	color: #c4c4c4;
+		margin-left: 10vw;
+
 }
 .c{
 	@include flex ;
