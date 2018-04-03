@@ -1,22 +1,16 @@
-@import'common';
-%wh{width: 300px;height: 450px}
+@import'common.scss';
+%wh{width: 280px;height: 350px}
 .main{
 	>div{width: 70vw;margin: 20px 15vw;}
 	&-part1{
-	display: flex;
-	flex-direction: column;width: inherit;
-		>p{margin: 40px 0;}
-	
+		display: flex;
+		flex-direction: column;width: inherit;
+		>p,hr{margin: 20px 0;}
 }
 	&-part2{
-		>div{width: 70vw;position: relative;
-		>div{display: inline-block;
-			&:nth-child(1){float: left}
-			&:nth-child(2){position: absolute;left: 50%;transform: translateX(-50%)}
-			&:nth-child(3){float: right;}
-		
-			}}
-.t{
+		>div{
+			width: 70vw;
+		.t{
 	margin: 2vw 0;
 	border-radius: 2px;
 	position: relative;
@@ -24,7 +18,8 @@
 		.table{
 			@extend %wh;
 			background: white;
-			td{padding: 0 10px;
+			td{
+				padding: 0 10px;
 				.center{
 					>div:nth-child(1){margin:0 5px}
 					
@@ -46,23 +41,33 @@
 			>p{
 				line-height: 1.4em;
 				color: white;
-				margin: 30px 60px;
+				margin: 10px 30px;
 	
 	
 }
 }
+	&:hover .tablee{visibility: visible}
+	
+	
+}	
+		>div{display: inline-block;
+			&:nth-child(1){float: left}
+			&:nth-child(2){position: absolute;left: 50%;transform: translateX(-50%)}
+			&:nth-child(3){float: right;}
+			}}
 }
-		.t:hover .tablee{visibility: visible}}}
-@media screen and (max-width: 1000px) {
-
-	.footer2 div{
-	width:70vw;
-}	
-color: white
-}	
-
-
-
-		
-	table,tr,td{border:$border}
-
+		}
+table,tr,td{border:$border}
+@media screen and (max-width: 1200px) {
+		.t{
+			clear: both;
+	}
+	}
+@media screen and (max-width: 1200px){
+	   .main-part2>div{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		&> div:nth-child(2){position: static;transform: none;left: 0;
+		   }}}

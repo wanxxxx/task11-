@@ -161,9 +161,9 @@ body > label {
     .footer > div {
       width: 70vw; } }
 
-.main-part2 .t .table, .main-part2 .t .tablee {
-  width: 300px;
-  height: 450px; }
+.main-part2 > div .t .table, .main-part2 > div .t .tablee {
+  width: 280px;
+  height: 350px; }
 
 .main > div {
   width: 70vw;
@@ -172,11 +172,40 @@ body > label {
   display: flex;
   flex-direction: column;
   width: inherit; }
-  .main-part1 > p {
-    margin: 40px 0; }
+  .main-part1 > p, .main-part1 hr {
+    margin: 20px 0; }
 .main-part2 > div {
-  width: 70vw;
-  position: relative; }
+  width: 70vw; }
+  .main-part2 > div .t {
+    margin: 2vw 0;
+    border-radius: 2px;
+    position: relative;
+    color: #ccc; }
+    .main-part2 > div .t .table {
+      background: white; }
+      .main-part2 > div .t .table td {
+        padding: 0 10px; }
+        .main-part2 > div .t .table td .center > div:nth-child(1), .main-part2 > div .t .table td .labels > div:nth-child(1) {
+          margin: 0 5px; }
+      .main-part2 > div .t .table .table2 {
+        color: #000; }
+        .main-part2 > div .t .table .table2 p {
+          display: inline-block; }
+    .main-part2 > div .t .tablee {
+      background: black;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      filter: alpha(opacity=70);
+      -moz-opacity: 0.7;
+      -khtml-opacity: 0.7;
+      opacity: 0.7; }
+      .main-part2 > div .t .tablee > p {
+        line-height: 1.4em;
+        color: white;
+        margin: 10px 30px; }
+    .main-part2 > div .t:hover .tablee {
+      visibility: visible; }
   .main-part2 > div > div {
     display: inline-block; }
     .main-part2 > div > div:nth-child(1) {
@@ -187,41 +216,20 @@ body > label {
       transform: translateX(-50%); }
     .main-part2 > div > div:nth-child(3) {
       float: right; }
-.main-part2 .t {
-  margin: 2vw 0;
-  border-radius: 2px;
-  position: relative;
-  color: #ccc; }
-  .main-part2 .t .table {
-    background: white; }
-    .main-part2 .t .table td {
-      padding: 0 10px; }
-      .main-part2 .t .table td .center > div:nth-child(1), .main-part2 .t .table td .labels > div:nth-child(1) {
-        margin: 0 5px; }
-    .main-part2 .t .table .table2 {
-      color: #000; }
-      .main-part2 .t .table .table2 p {
-        display: inline-block; }
-  .main-part2 .t .tablee {
-    background: black;
-    position: absolute;
-    top: 0;
-    visibility: hidden;
-    filter: alpha(opacity=70);
-    -moz-opacity: 0.7;
-    -khtml-opacity: 0.7;
-    opacity: 0.7; }
-    .main-part2 .t .tablee > p {
-      line-height: 1.4em;
-      color: white;
-      margin: 30px 60px; }
-.main-part2 .t:hover .tablee {
-  visibility: visible; }
 
-@media screen and (max-width: 1000px) {
-  .footer2 div {
-    width: 70vw; }
-
-  color: white; }
 table, tr, td {
   border: 1px solid #ccc; }
+
+@media screen and (max-width: 1200px) {
+  .t {
+    clear: both; } }
+@media screen and (max-width: 1200px) {
+  .main-part2 > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    .main-part2 > div > div:nth-child(2) {
+      position: static;
+      transform: none;
+      left: 0; } }
