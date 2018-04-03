@@ -1,13 +1,5 @@
 @import'common';	
-.labels{@extend .center;@extend .center-x;
-				position: absolute;
-				bottom: 10px;
-				z-index: 5;
-				width: 100px;
-				>label{
-				@include ci;
-				background: #fff;
-				&:hover{background: #ccc;}}}
+
 .main{
 	>div{
 		&:nth-of-type(n+2){width: 70%;margin:100px 15% 0 15%;}

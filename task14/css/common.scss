@@ -65,7 +65,8 @@ $gr:#29b078;
 		
 }
 $border:1px solid #ccc;
-.labels{@extend .center;@extend .center-x;
+
+.labels{@extend .center;@extend .center-x;//轮播图的小圆点
 				position: absolute;
 				bottom: 10px;
 				z-index: 5;

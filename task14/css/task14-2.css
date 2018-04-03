@@ -197,7 +197,7 @@ body > img {
       width: 650px;
       background: #fff;
       color: #ccc;
-      height: 800px; }
+      height: auto; }
       .main-div2 > div:nth-child(2) p {
         text-indent: 2em;
         line-height: 1.5em;
@@ -210,5 +210,5 @@ body > img {
     flex-direction: column;
     align-items: center; }
     .main-div2 > div {
-      width: 600px !important;
+      width: 70vw !important;
       margin: 20px 0; } }

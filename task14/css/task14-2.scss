@@ -21,7 +21,7 @@ body>img{width: 100vw;height:auto;}
 					}
 						}
 				>div:nth-child(2){
-				width: 650px;background: #fff;color: #ccc;height: 800px;
+				width: 650px;background: #fff;color: #ccc;height: auto;
 				
 				
 				p{text-indent: 2em;line-height: 1.5em;margin: 1em 0;}
@@ -36,7 +36,7 @@ body>img{width: 100vw;height:auto;}
 
 	@media screen and (max-width: 1200px) {
 			.main-div2{flex-direction: column;align-items: center;
-				>div{width: 600px!important;margin: 20px 0;}
+				>div{width: 70vw!important;margin: 20px 0;}
 		}}
 
 

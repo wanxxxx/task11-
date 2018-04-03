@@ -161,19 +161,6 @@ body > label {
     .footer > div {
       width: 70vw; } }
 
-.labels {
-  position: absolute;
-  bottom: 10px;
-  z-index: 5;
-  width: 100px; }
-  .labels > label {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #fff; }
-    .labels > label:hover {
-      background: #ccc; }
-
 .main > div:nth-of-type(n+2) {
   width: 70%;
   margin: 100px 15% 0 15%; }
