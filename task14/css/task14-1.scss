@@ -1,0 +1,140 @@
+@import'common';	
+.labels{@extend .center;@extend .center-x;
+				position: absolute;
+				bottom: 10px;
+				z-index: 5;
+				width: 100px;
+				>label{
+				@include ci;
+				background: #fff;
+				&:hover{background: #ccc;}}}
+.main{
+	>div{
+		&:nth-of-type(n+2){width: 70%;margin:100px 15% 0 15%;}
+		&:last-child{width: 70%;margin:100px 15% }
+	}
+	.box{@extend .center;@extend .size-l;margin: 70px 0 -30px 0;}
+	
+	&-part1{//图片轮播
+		height: 31.25vw;
+		overflow: hidden;
+		width: 100vw;
+		position: relative;
+		.main-ul{
+			width: 9999px;
+			transition:all 0.5s;
+			transform: translateX(0);
+
+			>li{
+				float: left;
+				width: 100vw;
+				position: relative;
+				>img{
+					width: 100vw;
+					height: auto;
+				z-index: 1;}
+				>label{
+					@extend .center-y;
+					color: #ccc;
+					font-size: 35px;
+					font-weight: bold;
+					opacity:0.5;
+					&:nth-child(1){left: 5vw;}
+					&:nth-child(3){right: 5vw;}
+					
+				}
+				}
+			
+			
+			}}
+	&-part2{
+align-items: baseline;
+>div {
+	width: 12vw;
+	padding: 0 2vw;
+	@extend .center2;
+	>p,>img,>div{margin: 10px 0;}
+	.center{justify-content: flex-start;margin-top: 20px}
+}
+		&-div4{
+        
+		border-left: $border;
+			>div{
+				
+			}
+	}
+
+	}
+	&-part3{
+			flex-wrap: wrap;
+			
+			>div{width: 23%;
+				margin: 10px 1%;
+				@extend .center;
+					>div:nth-child(1){
+						width: 40px;
+						
+						>div{
+						@include ci(40px);
+						background: #fff;
+						@extend .center2;
+							@extend .s;
+						 
+
+				
+				
+						}}
+					>div:nth-child(2){width: 80%;padding: 0 5%;}
+					>div:nth-child(3){width: 10%}
+
+				}}
+				
+	
+	
+	&-part4{ overflow: hidden;position: relative;width: 70vw;transform: translateX(0);
+		.labels{bottom: 0;}
+		&-slide{width: 9999px;height: 300px;transition:all 0.1s;
+
+		>div{
+			width: 70vw;
+			float: left;
+			
+			
+			
+			>div{			
+			width: 20%;
+			@extend .center2;
+			height:300px;
+			margin: 20px 1%;
+		    background: white;
+			border: 0 solid;
+			border-radius: 5px;
+			padding: 0 0.5vw;
+			@extend .s;
+			>div{margin: 5px 0px;}
+}}}
+
+
+	}
+	&-part5{
+		height: auto;
+		background: #fff;
+		margin-bottom: 100px;
+		>a{@extend .center;	padding: 10px;
+}
+}
+	@media screen and (max-width: 1200px){
+	&-part2,&-part3,&-part4-slide>div,&-part5{flex-wrap: wrap; >div{width:30vw;}}
+		&-part2>div,&-part5>a{width:70vw;}
+	}
+
+	@media screen and (max-width: 800px){
+	&-part2,&-part3,&-part4-slide>div,&-part5{ >div,>a{width:70vw;}}
+	}}
+		
+	#sildeInput1:checked ~ .main-ul{ transform: translateX(0);}
+    #sildeInput2:checked ~ .main-ul{ transform: translateX(-100vw);}
+    #sildeInput3:checked ~ .main-ul{ transform: translateX(-200vw);}
+	#sildeInput4:checked ~ .main-part4-slide{ transform: translateX(0);}
+    #sildeInput5:checked ~ .main-part4-slide{ transform: translateX(-70vw);}
+    #sildeInput6:checked ~ .main-part4-slide{ transform: translateX(-140vw);}

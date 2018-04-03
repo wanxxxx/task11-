@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{padding:0; margin:0;
+overflow-x:hidden;
+	background: white;
+ }
+body{font-family: 幼圆;
+}
+.header{background: #29b078;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column
+	
+	
+	  }	
+.header1{background: white;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15vw
+	  }	
+.header2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	
+
+}
+
+.header2>img{
+	margin-left: 5vw;
+	z-index: 1000;
+	
+}
+a{
+	text-decoration: none !important;
+}
+.ul1 ul{
+	background: #29b078;
+	height: 80px;
+	width: 400px;
+	margin-right: 2px;
+
+	  }
+
+.ul1 span{
+	background: white
+}
+
+.layui-nav-tree{
+	display: none;
+	margin-top: -60px
+}
+.layui-nav-item img{
+	float: right;
+margin-right: 20px;
+
+}
+.layui-nav-tree span{
+	display: none
+}
+.layui-nav-tree .layui-nav-item a:hover{
+	background: none;
+}
+.layui-nav-item{
+	background: #29b078;
+}
+.layui-nav-child dd{
+	background: #29b078;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+	background-color: #c4c4c4;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+		background-color: #FFFFFF;
+
+}
+dd{
+	text-align: center	
+}
+
+@media screen and (max-width: 800px) {
+.layui-nav-tree{
+	display: inline-block;
+}
+	.ul1 {
+	display: none;
+	  }
+}
+.a1{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 15%;
+	width: 70%;
+	height: 60px;
+	
+
+}
+.biaoti{
+	width:70%;
+	margin: 5px 15%;
+	display: flex;
+	flex-direction: column;
+	font-size: 120%;
+	font-weight: bold;
+	
+}
+hr{
+	width: 100%;
+	height: 1px;
+	margin-top: 20px
+		
+}
+
+
+.footer2{
+background: #29b078;
+	width: 100%;
+	z-index:1;
+	display: flex;
+	justify-content: space-around;
+	font-size: 80%;
+	align-items:baseline;
+	padding: 20px 3vw;
+	color: white;
+	flex-wrap: wrap;}
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	justify-content: center
+}
+
+.layui-row div {
+	border-bottom: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4
+}
+
+table{
+	border-color: #c4c4c4;
+	width: 350px;
+	height:450px;
+		font-size: 100%;
+	background: white;
+	padding: 0;
+
+		
+	overflo
+}
+tr,td{border:1px solid #c4c4c4;
+
+	
+	
+}
+.t{
+	position: relative;
+	margin: 2vw 1vw;
+	width: 350px;
+	height:450px;
+	font-family: 黑体;
+	font-size: 80%;
+	border-radius: 2px;
+}
+.t:hover .tablee{visibility: visible}
+.tablee{
+	border-color: #c4c4c4;
+	width: 350px;
+	height:450px;
+	font-size: 100%;
+	background:black;
+	position: absolute;
+	top:0;
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	filter:alpha(opacity=70); 
+ -moz-opacity:0.7; 
+ -khtml-opacity: 0.7; 
+ opacity: 0.7; 
+
+	
+
+	
+}
+.tablee p{
+	line-height: 1.4em;
+	font-size: 110%;
+	color: white;
+	padding: 10px 60px
+	
+	
+}
+.th{
+	display: flex;
+	text-align:left;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.th p{
+	margin-top:4px;
+	
+}
+.p{
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start
+}
+
+.table2 div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+td{
+	padding: 0 20px
+}
+.a2{
+	display: flex;
+	justify-content: center;
+
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 80%;
+	margin: 0 10%;
+	
+
+
+	
+}
+@media screen and (max-width: 1000px) {
+
+	.footer2 div{
+	width:70vw;
+
+}	
+}
+.aaa{
+	color: white
+}	
+

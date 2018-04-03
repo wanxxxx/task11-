@@ -1,0 +1,44 @@
+@import'common.scss';
+body>img{width: 100vw;height:auto;}
+	
+	
+	.main{width: 70vw;margin: 20px 15vw;
+		&-div1{width: 150px;}
+		&-div2{width: 70vw;align-items: flex-start;
+			>div{background: #fff;border: $border;}
+				>div:nth-child(1){
+					width: 120px;
+					ul{color: $gr;
+						li{@extend .center;width: 100%;
+							margin-bottom: 20px;
+							>span{
+								@include ci;border: 1px solid orange;margin-right: 10px;
+								}
+							&:hover{color: orange}
+						
+						 }
+						.active{span{background: orange}}
+					}
+						}
+				>div:nth-child(2){
+				width: 650px;background: #fff;color: #ccc;height: 800px;
+				
+				
+				p{text-indent: 2em;line-height: 1.5em;margin: 1em 0;}
+			
+						>div:nth-child(1){
+							p{
+							width: 70%;}}
+					}
+			
+		}}
+
+
+	@media screen and (max-width: 1200px) {
+			.main-div2{flex-direction: column;align-items: center;
+				>div{width: 600px!important;margin: 20px 0;}
+		}}
+
+
+
+
