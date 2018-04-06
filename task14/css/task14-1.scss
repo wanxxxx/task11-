@@ -96,7 +96,7 @@ align-items: baseline;
 			width: 20%;
 			@extend .center2;
 			height:350px;
-			margin: 20px 1%;
+			margin: 20px 0;
 		    background: white;
 			border: 0 solid;
 			border-radius: 5px;
@@ -154,7 +154,10 @@ align-items: baseline;
 	&-part2,&-part3,&-part5{
 		>div,>a{width:70vw;}
 	}
-	&-part4-slide>div>div{width:70vw;font-size: 12px}
+	&-part4-slide>div{
+
+		>div{width:64vw;font-size: 10px;
+			margin: 20px 3vw}}
 	}
 @media screen and (max-width: 600px){
 		&-part6>ul>li{width:50% }

@@ -258,7 +258,7 @@ body > label {
       .main-part4-slide > div > div {
         width: 20%;
         height: 350px;
-        margin: 20px 1%;
+        margin: 20px 0;
         background: white;
         border: 0 solid;
         border-radius: 5px; }
@@ -300,8 +300,9 @@ body > label {
   .main-part2 > div, .main-part2 > a, .main-part3 > div, .main-part3 > a, .main-part5 > div, .main-part5 > a {
     width: 70vw; }
   .main-part4-slide > div > div {
-    width: 70vw;
-    font-size: 12px; } }
+    width: 64vw;
+    font-size: 10px;
+    margin: 20px 3vw; } }
 @media screen and (max-width: 600px) {
   .main-part6 > ul > li {
     width: 50%; } }
