@@ -1,4 +1,4 @@
-@import'common';	
+@import'common';
 
 .main{
 	>div{
@@ -6,7 +6,7 @@
 		&:last-child{width: 70%;margin:100px 15% }
 	}
 	.box{@extend .center;@extend .size-l;margin: 70px 0 -30px 0;}
-	
+
 	&-part1{//图片轮播
 		height: 31.25vw;
 		overflow: hidden;
@@ -34,11 +34,11 @@
 					opacity:0.5;
 					&:nth-child(1){left: 5vw;}
 					&:nth-child(3){right: 5vw;}
-					
+
 				}
 				}
-			
-			
+
+
 			}}
 	&-part2{
 align-items: baseline;
@@ -50,41 +50,41 @@ align-items: baseline;
 	.center{justify-content: flex-start;margin-top: 20px}
 }
 		&-div4{
-        
+
 		border-left: $border;
 			>div{
-				
+
 			}
 	}
 
 	}
 	&-part3{
 			flex-wrap: wrap;
-			
+
 			>div{width: 23%;
 				margin: 10px 1%;
 				@extend .center;
 					>div:nth-child(1){
 						width: 40px;
-						
+
 						>div{
 						@include ci(40px);
 						background: #fff;
 						@extend .center2;
 							@extend .s;
 							color: $gr;
-						 
 
-				
-				
+
+
+
 						}}
 					>div:nth-child(2){width: 80%;padding: 0 5%;}
 					>div:nth-child(3){width: 10%}
 
 				}}
-				
-	
-	
+
+
+
 	&-part4{ overflow: hidden;position: relative;width: 70vw;transform: translateX(0);
 		.labels{bottom: 0;}
 		&-slide{width: 9999px;height: 300px;transition:all 0.1s;
@@ -92,10 +92,10 @@ align-items: baseline;
 		>div{
 			width: 70vw;
 			float: left;
-			
-			
-			
-			>div{			
+
+
+
+			>div{
 			width: 20%;
 			@extend .center2;
 			height:300px;
@@ -113,34 +113,34 @@ align-items: baseline;
 	&-part5{
 		background: #fff;
 		margin-bottom: 100px;
-		
-		>div{@extend .center;	
+
+		>div{@extend .center;
 			height: 150px;
 			background: #fff;
 			width: 250px;
-			margin: 0 2px;
+			margin: 2px;
 			&:hover{@extend .s;
-				
+
 			}
 		}}
 		&-part6{
-			
+
 			ul{flex-wrap: wrap;
 				>li{
 					@extend .center;
 					width: 10%;
 					height: 20px;
-					
+
 					>span{width: 5px;height: 5px;background: #000;border-radius: 50%;}
 					>p{@extend .center;border: 1px solid #eee;
 						&:hover{border-bottom: 1px solid $gr}
-					
+
 					}
 				}
-				
+
 			}}
-			
-			
+
+
 
 	@media screen and (max-width: 1200px){
 	&-part2,&-part3,&-part4-slide>div,&-part5{flex-wrap: wrap; >div{width:30vw;}}
@@ -160,7 +160,7 @@ align-items: baseline;
 
 
 }
-		
+
 	#sildeInput1:checked ~ .main-ul{ transform: translateX(0);}
     #sildeInput2:checked ~ .main-ul{ transform: translateX(-100vw);}
     #sildeInput3:checked ~ .main-ul{ transform: translateX(-200vw);}
