@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*常用样式*/
-.center, .labels, .main .box, .main-part3 > div, .main-part5 > a {
+.center, .labels, .main .box, .main-part3 > div, .main-part5 > div, .main-part6 ul > li, .main-part6 ul > li > p {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -45,7 +45,7 @@
   left: 50%;
   transform: translatex(-50%); }
 
-.s, .main-part3 > div > div:nth-child(1) > div, .main-part4-slide > div > div {
+.s, .main-part3 > div > div:nth-child(1) > div, .main-part4-slide > div > div, .main-part5 > div:hover {
   box-shadow: 0 0 5px #888888; }
 
 .gr {
@@ -71,9 +71,13 @@ body {
   background: #fff; }
   .header-part1 {
     /*头部第1部分*/
-    padding: 0 10vw;
+    width: 70vw;
     color: #29b078;
-    height: 30px; }
+    height: 30px;
+    padding: 0 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .header-part2 {
     /*头部第2部分*/
     background: #29b078;
@@ -151,12 +155,23 @@ body > label {
   width: 100%; }
 
 .footer {
-  width: 100%;
+  width: 70vw;
   background: #29b078;
   align-items: baseline;
   color: white;
   flex-wrap: wrap;
-  padding: 10px 0; }
+  padding: 10px 15vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
+  .footer > div:nth-child(1) > p {
+    line-height: 50px; }
+  .footer > div:nth-child(2) > p {
+    line-height: 25px; }
+  .footer > div:nth-child(3) > p {
+    line-height: 30px; }
+  .footer > div .p2 {
+    margin-top: 30px; }
   @media screen and (max-width: 800px) {
     .footer > div {
       width: 70vw; } }
@@ -177,7 +192,8 @@ body > label {
   .main-part1 .main-ul {
     width: 9999px;
     transition: all 0.5s;
-    transform: translateX(0); }
+    transform: translateX(0);
+    list-style-type: none; }
     .main-part1 .main-ul > li {
       float: left;
       width: 100vw;
@@ -202,7 +218,7 @@ body > label {
     padding: 0 2vw; }
     .main-part2 > div > p, .main-part2 > div > img, .main-part2 > div > div {
       margin: 10px 0; }
-    .main-part2 > div .center, .main-part2 > div .labels, .main-part2 > div .main .box, .main .main-part2 > div .box, .main-part2 > div .main-part3 > div, .main-part2 > div .main-part5 > a {
+    .main-part2 > div .center, .main-part2 > div .labels, .main-part2 > div .main .box, .main .main-part2 > div .box, .main-part2 > div .main-part3 > div, .main-part2 > div .main-part5 > div, .main-part2 > div .main-part6 ul > li, .main-part6 .main-part2 > div ul > li, .main-part2 > div .main-part6 ul > li > p, .main-part6 .main-part2 > div ul > li > p {
       justify-content: flex-start;
       margin-top: 20px; }
   .main-part2-div4 {
@@ -218,7 +234,8 @@ body > label {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: #fff; }
+        background: #fff;
+        color: #29b078; }
     .main-part3 > div > div:nth-child(2) {
       width: 80%;
       padding: 0 5%; }
@@ -249,21 +266,42 @@ body > label {
         .main-part4-slide > div > div > div {
           margin: 5px 0px; }
 .main-part5 {
-  height: auto;
   background: #fff;
   margin-bottom: 100px; }
-  .main-part5 > a {
-    padding: 10px; }
+  .main-part5 > div {
+    height: 150px;
+    background: #fff;
+    width: 250px;
+    margin: 0 2px; }
+.main-part6 ul {
+  flex-wrap: wrap; }
+  .main-part6 ul > li {
+    width: 10%;
+    height: 20px; }
+    .main-part6 ul > li > span {
+      width: 5px;
+      height: 5px;
+      background: #000;
+      border-radius: 50%; }
+    .main-part6 ul > li > p {
+      border: 1px solid #eee; }
+      .main-part6 ul > li > p:hover {
+        border-bottom: 1px solid #29b078; }
 @media screen and (max-width: 1200px) {
   .main-part2, .main-part3, .main-part4-slide > div, .main-part5 {
     flex-wrap: wrap; }
     .main-part2 > div, .main-part3 > div, .main-part4-slide > div > div, .main-part5 > div {
       width: 30vw; }
-  .main-part2 > div, .main-part5 > a {
-    width: 70vw; } }
-@media screen and (max-width: 800px) {
+  .main-part2 > div, .main-part5 > div {
+    width: 70vw; }
+  .main-part6 > ul > li {
+    width: 20%; } }
+@media screen and (max-width: 900px) {
   .main-part2 > div, .main-part2 > a, .main-part3 > div, .main-part3 > a, .main-part4-slide > div > div, .main-part4-slide > div > a, .main-part5 > div, .main-part5 > a {
     width: 70vw; } }
+@media screen and (max-width: 600px) {
+  .main-part6 > ul > li {
+    width: 50%; } }
 
 #sildeInput1:checked ~ .main-ul {
   transform: translateX(0); }

@@ -16,6 +16,7 @@
 			width: 9999px;
 			transition:all 0.5s;
 			transform: translateX(0);
+			list-style-type: none;
 
 			>li{
 				float: left;
@@ -71,6 +72,7 @@ align-items: baseline;
 						background: #fff;
 						@extend .center2;
 							@extend .s;
+							color: $gr;
 						 
 
 				
@@ -109,20 +111,55 @@ align-items: baseline;
 
 	}
 	&-part5{
-		height: auto;
 		background: #fff;
 		margin-bottom: 100px;
-		>a{@extend .center;	padding: 10px;
-}
-}
+		
+		>div{@extend .center;	
+			height: 150px;
+			background: #fff;
+			width: 250px;
+			margin: 0 2px;
+			&:hover{@extend .s;
+				
+			}
+		}}
+		&-part6{
+			
+			ul{flex-wrap: wrap;
+				>li{
+					@extend .center;
+					width: 10%;
+					height: 20px;
+					
+					>span{width: 5px;height: 5px;background: #000;border-radius: 50%;}
+					>p{@extend .center;border: 1px solid #eee;
+						&:hover{border-bottom: 1px solid $gr}
+					
+					}
+				}
+				
+			}}
+			
+			
+
 	@media screen and (max-width: 1200px){
 	&-part2,&-part3,&-part4-slide>div,&-part5{flex-wrap: wrap; >div{width:30vw;}}
-		&-part2>div,&-part5>a{width:70vw;}
+		&-part2>div,&-part5>div{width:70vw;}
+		&-part6>ul>li{width: 20%}
 	}
 
-	@media screen and (max-width: 800px){
+	@media screen and (max-width: 900px){
 	&-part2,&-part3,&-part4-slide>div,&-part5{ >div,>a{width:70vw;}}
-	}}
+	}
+@media screen and (max-width: 600px){
+		&-part6>ul>li{width:50% }
+	}
+
+
+
+
+
+}
 		
 	#sildeInput1:checked ~ .main-ul{ transform: translateX(0);}
     #sildeInput2:checked ~ .main-ul{ transform: translateX(-100vw);}

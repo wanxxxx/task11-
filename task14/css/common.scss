@@ -81,9 +81,13 @@ body{	background: #EEEEEE;
 .header{
 	background: #fff;
 	&-part1{/*头部第1部分*/
-		padding: 0 10vw;
+		width:70vw;		
 		color: $gr;
 		height: 30px;
+		padding: 0 15vw ;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		}
 	&-part2{/*头部第2部分*/
 		background: $gr;
@@ -160,12 +164,25 @@ body>label{
 	width: 100%;
 	}
 .footer{
-	width: 100%;
+	width: 70vw;
 	background: $gr;
 	align-items:baseline;
 	color: white;
 	flex-wrap: wrap;
-	padding: 10px 0;
+	padding: 10px 15vw ;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	>div{
+		&:nth-child(1){>p{line-height: 50px;}};
+		&:nth-child(2){>p{line-height: 25px;}};
+		&:nth-child(3){>p{line-height: 30px;}};
+		.p2{margin-top: 30px;}
+		
+
+		
+		
+	}
 
 
 	

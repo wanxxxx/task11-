@@ -71,9 +71,13 @@ body {
   background: #fff; }
   .header-part1 {
     /*头部第1部分*/
-    padding: 0 10vw;
+    width: 70vw;
     color: #29b078;
-    height: 30px; }
+    height: 30px;
+    padding: 0 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .header-part2 {
     /*头部第2部分*/
     background: #29b078;
@@ -151,12 +155,23 @@ body > label {
   width: 100%; }
 
 .footer {
-  width: 100%;
+  width: 70vw;
   background: #29b078;
   align-items: baseline;
   color: white;
   flex-wrap: wrap;
-  padding: 10px 0; }
+  padding: 10px 15vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
+  .footer > div:nth-child(1) > p {
+    line-height: 50px; }
+  .footer > div:nth-child(2) > p {
+    line-height: 25px; }
+  .footer > div:nth-child(3) > p {
+    line-height: 30px; }
+  .footer > div .p2 {
+    margin-top: 2em; }
   @media screen and (max-width: 800px) {
     .footer > div {
       width: 70vw; } }
@@ -187,12 +202,14 @@ body > img {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            border: 1px solid orange;
+            border: 2px solid #f26312;
             margin-right: 10px; }
           .main-div2 > div:nth-child(1) ul li:hover {
             color: orange; }
+            .main-div2 > div:nth-child(1) ul li:hover > span {
+              background: #f9a372; }
         .main-div2 > div:nth-child(1) ul .active span, .main-div2 > div:nth-child(1) ul .header-part2 > div:nth-child(1) a:hover span, .header-part2 > div:nth-child(1) .main-div2 > div:nth-child(1) ul a:hover span {
-          background: orange; }
+          background: #f9a372; }
     .main-div2 > div:nth-child(2) {
       width: 650px;
       background: #fff;

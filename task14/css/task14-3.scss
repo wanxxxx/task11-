@@ -1,5 +1,5 @@
 @import'common.scss';
-%wh{width: 280px;height: 350px}
+%wh{width: 300px;height: 380px}
 .main{
 	>div{width: 70vw;margin: 20px 15vw;}
 	&-part1{
@@ -15,17 +15,25 @@
 	border-radius: 2px;
 	position: relative;
 	color: #ccc;
+			
+			
 		.table{
 			@extend %wh;
 			background: white;
+			box-shadow: 0 0 5px #e3e3e3;
+			@extend .size-s;
 			td{
 				padding: 0 10px;
 				.center{
-					>div:nth-child(1){margin:0 5px}
+					>div:nth-child(2){margin:0 5px}
 					
 				}}
 			.table2{color: #000;
-				p{display: inline-block;}
+				>div{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
 			}
 
 }
@@ -33,11 +41,13 @@
 			@extend %wh;
 			background:black;
 			@include abs(0);
-			visibility: hidden;
 			filter:alpha(opacity=70); 
+			@extend .size-m;
  			-moz-opacity:0.7; 
  			-khtml-opacity: 0.7; 
 			 opacity: 0.7; 
+	transform: scale(0.5,0.5);
+	visibility: hidden;
 			>p{
 				line-height: 1.4em;
 				color: white;
@@ -46,7 +56,7 @@
 	
 }
 }
-	&:hover .tablee{visibility: visible}
+	&:hover .tablee{	transform: scale(1,1);transition:all 0.5s;visibility: visible;}
 	
 	
 }	
@@ -57,13 +67,10 @@
 			}}
 }
 		}
-table,tr,td{border:$border}
-@media screen and (max-width: 1200px) {
-		.t{
-			clear: both;
-	}
-	}
-@media screen and (max-width: 1200px){
+table,tr,td{border:0.1px solid #e8e8e8}
+table,.tablee{border-radius: 5px;}
+
+@media screen and (max-width: 1300px){
 	   .main-part2>div{
 		display: flex;
 		align-items: center;
