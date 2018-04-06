@@ -92,20 +92,17 @@ align-items: baseline;
 		>div{
 			width: 70vw;
 			float: left;
-
-
-
 			>div{
 			width: 20%;
 			@extend .center2;
-			height:300px;
+			height:350px;
 			margin: 20px 1%;
 		    background: white;
 			border: 0 solid;
 			border-radius: 5px;
-			padding: 0 0.5vw;
 			@extend .s;
-			>div{margin: 5px 0px;}
+			>div{margin: 5px 0px;
+			padding: 0 2vw;}
 }}}
 
 
@@ -143,13 +140,21 @@ align-items: baseline;
 
 
 	@media screen and (max-width: 1200px){
-	&-part2,&-part3,&-part4-slide>div,&-part5{flex-wrap: wrap; >div{width:30vw;}}
-		&-part2>div,&-part5>div{width:70vw;}
+	&-part2,&-part3,&-part4-slide>div,&-part5{
+		flex-wrap: wrap;
+		>div{width:30vw;}
+	}
+		&-part,&-part5{
+			>div{width:70vw;}
+		}
 		&-part6>ul>li{width: 20%}
 	}
 
 	@media screen and (max-width: 900px){
-	&-part2,&-part3,&-part4-slide>div,&-part5{ >div,>a{width:70vw;}}
+	&-part2,&-part3,&-part5{
+		>div,>a{width:70vw;}
+	}
+	&-part4-slide>div>div{width:70vw;font-size: 12px}
 	}
 @media screen and (max-width: 600px){
 		&-part6>ul>li{width:50% }
