@@ -3,7 +3,7 @@
 .main{
 	>div{
 		&:nth-of-type(n+2){width: 70%;margin:100px 15% 0 15%;}
-		&:last-child{width: 70%;margin:100px 15% }
+		&:last-child{width: 100%;margin: 100px 0 0 0 }
 	}
 	.box{@extend .center;@extend .size-l;margin: 70px 0 -30px 0;}
 
@@ -93,10 +93,10 @@ align-items: baseline;
 			width: 70vw;
 			float: left;
 			>div{
-			width: 20%;
+			width: 23%;
 			@extend .center2;
 			height:350px;
-			margin: 20px 0;
+			margin: 20px 1vw;
 		    background: white;
 			border: 0 solid;
 			border-radius: 5px;
@@ -121,19 +121,25 @@ align-items: baseline;
 			}
 		}}
 		&-part6{
+			background:#fff;
+			@extend .center3;
+			>div{width: 70vw;
 
-			ul{flex-wrap: wrap;
+			>ul{
+				flex-wrap: wrap;
 				>li{
 					@extend .center;
+					color: #ccc;
 					width: 10%;
 					height: 20px;
 
-					>span{width: 5px;height: 5px;background: #000;border-radius: 50%;}
-					>p{@extend .center;border: 1px solid #eee;
+					span{width: 5px;height: 5px;background: #ccc;border-radius: 50%;}
+					>p{@extend .center;
+						border: 1px solid #fff;
 						&:hover{border-bottom: 1px solid $gr}
 
 					}
-				}
+				}}
 
 			}}
 
@@ -147,7 +153,7 @@ align-items: baseline;
 		&-part,&-part5{
 			>div{width:70vw;}
 		}
-		&-part6>ul>li{width: 20%}
+		&-part6>div>ul>li{width: 20%}
 	}
 
 	@media screen and (max-width: 900px){
@@ -158,16 +164,21 @@ align-items: baseline;
 
 		>div{width:64vw;font-size: 10px;
 			margin: 20px 3vw}}
+		&-part6>div>ul>li{width: 25%}
 	}
-@media screen and (max-width: 600px){
-		&-part6>ul>li{width:50% }
+	
+	@media screen and (max-width: 600px){
+		&-part6>div>ul>li{width:50% }
 	}
-
-
-
 
 
 }
+
+
+
+
+
+
 
 	#sildeInput1:checked ~ .main-ul{ transform: translateX(0);}
     #sildeInput2:checked ~ .main-ul{ transform: translateX(-100vw);}
