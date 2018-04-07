@@ -30,7 +30,7 @@
 }
 .size-l{
 	font-size: 16px;
-	font-weight: bold;
+
 }
 .center-y{
 	position: absolute;
@@ -81,21 +81,21 @@ body{	background: #EEEEEE;
 .header{
 	background: #fff;
 	&-part1{/*头部第1部分*/
-		width:70vw;		
 		color: $gr;
-		height: 30px;
-		padding: 0 15vw ;
+		padding: 5px 15vw ;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		
 		}
 	&-part2{/*头部第2部分*/
 		background: $gr;
 		height: 80px;
 		position: relative;
-		>div:nth-child(1){
+		>div:nth-of-type(1){
 			width: 400px;
-			right: 10vw;
+			right: 15vw;
 			color: #fff;
 			.active{
 				border-bottom-color:  #fff;
@@ -114,18 +114,17 @@ body{	background: #EEEEEE;
 					}
 			
 				}}
-		>div:nth-child(2){
-			left: 5vw;
+		>div:nth-of-type(2){
+			left: 15vw;
 		}}}
 
 
 /*导航栏*/
 .mtb40{ margin-top: 40px;margin-bottom: 40px;}
 		
-body>label{
+.label1{
 			display: none;
-			@include abs(49px);
-			right: 5vw;
+			right: 15vw;
 			height: 42px;
 			width: 39px;
 			border-radius: 4px;
@@ -152,21 +151,17 @@ body>label{
 			transition: transform 500ms ease;}
 			
 			}}
-@media screen and (max-width: 800px) {body>label{display: flex;align-items: center;flex-direction: column;justify-content: center;}}
+@media screen and (max-width: 800px) {.label1{display: flex;align-items: center;flex-direction: column;justify-content: center;}}
 #menu {
 			display: none;
 	  			&:checked ~ .ul {display: block;}
 		}
 
 .main{/*内容*/
-	
     overflow: hidden;
-	width: 100%;
 	}
 .footer{
-	width: 70vw;
 	background: $gr;
-	align-items:baseline;
 	color: white;
 	flex-wrap: wrap;
 	padding: 10px 15vw ;

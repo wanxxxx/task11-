@@ -102,7 +102,10 @@ align-items: baseline;
 			border-radius: 5px;
 			@extend .s;
 			>div{margin: 5px 0px;
-			padding: 0 2vw;}
+			padding: 0 2vw;
+				&:nth-child(3){
+					color: #ccc;
+				}}
 }}}
 
 
@@ -162,7 +165,7 @@ align-items: baseline;
 	}
 	&-part4-slide>div{
 
-		>div{width:64vw;font-size: 10px;
+		>div{width:60vw;
 			margin: 20px 3vw}}
 		&-part6>div>ul>li{width: 25%}
 	}
