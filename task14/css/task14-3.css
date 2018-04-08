@@ -75,7 +75,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: nowrap; }
+    .header-part1 > div {
+      white-space: nowrap; }
   .header-part2 {
     /*头部第2部分*/
     background: #29b078;
@@ -170,7 +172,7 @@ body {
       width: 70vw; } }
 
 .main-part2 > div .t .table, .main-part2 > div .t .tablee {
-  width: 300px;
+  width: 270px;
   height: 380px; }
 
 .main hr {

@@ -75,7 +75,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: nowrap; }
+    .header-part1 > div {
+      white-space: nowrap; }
   .header-part2 {
     /*头部第2部分*/
     background: #29b078;
@@ -180,7 +182,7 @@ body {
 .main-part1 {
   height: 31.25vw;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   position: relative; }
   .main-part1 .main-ul {
     width: 9999px;

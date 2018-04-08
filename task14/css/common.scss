@@ -86,13 +86,15 @@ body{	background: #EEEEEE;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
+		>div{white-space: nowrap;}
 		
 		}
 	&-part2{/*头部第2部分*/
 		background: $gr;
 		height: 80px;
 		position: relative;
+
 		>div:nth-of-type(1){
 			width: 400px;
 			right: 15vw;

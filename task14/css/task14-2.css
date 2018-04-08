@@ -70,13 +70,14 @@ body {
   background: #fff; }
   .header-part1 {
     /*头部第1部分*/
-    width: 70vw;
     color: #29b078;
     padding: 5px 15vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: nowrap; }
+    .header-part1 > div {
+      white-space: nowrap; }
   .header-part2 {
     /*头部第2部分*/
     background: #29b078;
@@ -148,8 +149,7 @@ body {
 
 .main {
   /*内容*/
-  overflow: hidden;
-  width: 100%; }
+  overflow: hidden; }
 
 .footer {
   background: #29b078;
