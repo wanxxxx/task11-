@@ -1,5 +1,4 @@
-@import'common';
-
+@import'common.scss';
 .main{
 	>div{
 		&:nth-of-type(n+2){width: 70%;margin:100px 15% 0 15%;}
@@ -46,8 +45,9 @@ align-items: baseline;
 	width: 12vw;
 	padding: 0 2vw;
 	@extend .center2;
-	>p,>img,>div{margin: 10px 0;}
-	.center{justify-content: flex-start;margin-top: 20px}
+	>p,>img,>div{margin: 10px 0;color: #666}
+	>p:nth-of-type(1){@extend .size-l}
+	.center{justify-content: flex-start;margin-top: 20px;color: $gr;}
 }
 		&-div4{
 
@@ -60,6 +60,7 @@ align-items: baseline;
 	}
 	&-part3{
 			flex-wrap: wrap;
+		color: #666;
 
 			>div{width: 23%;
 				margin: 10px 1%;
@@ -93,16 +94,16 @@ align-items: baseline;
 			width: 70vw;
 			float: left;
 			>div{
-			width: 23%;
+			width: 260px;
 			@extend .center2;
-			height:350px;
+			height:300px;
 			margin: 20px 1vw;
 		    background: white;
 			border: 0 solid;
 			border-radius: 5px;
 			@extend .s;
-			>div{margin: 5px 0px;
-			padding: 0 2vw;
+			>div{margin: 15px 15px;
+			p
 				&:nth-child(3){
 					color: #ccc;
 				}}
@@ -118,7 +119,7 @@ align-items: baseline;
 			height: 150px;
 			background: #fff;
 			width: 250px;
-			margin: 2px;
+			margin: 0 2px;
 			&:hover{@extend .s;
 
 			}
@@ -126,6 +127,7 @@ align-items: baseline;
 		&-part6{
 			background:#fff;
 			@extend .center3;
+			
 			>div{width: 70vw;
 
 			>ul{
@@ -149,24 +151,23 @@ align-items: baseline;
 
 
 	@media screen and (max-width: 1200px){
-	&-part2,&-part3,&-part4-slide>div,&-part5{
+	&-part2,&-part3,&-part5{
 		flex-wrap: wrap;
-		>div{width:30vw;}
-	}
-		&-part,&-part5{
-			>div{width:70vw;}
+		>div{width:30vw;}}
+		&-part4-slide>div{
+			flex-wrap: wrap;
+			>div{margin: 10px 3vw;;}
+		}	
+		&-part5{width:40vw!important;margin: 100px 30vw 0 30vw!important;
+			>div{width:40vw;margin: 1px 0;}
 		}
-		&-part6>div>ul>li{width: 20%}
-	}
+		&-part6>div>ul>li{width: 20%}}
+	
 
 	@media screen and (max-width: 900px){
-	&-part2,&-part3,&-part5{
+	&-part2,&-part3{
 		>div,>a{width:70vw;}
 	}
-	&-part4-slide>div{
-
-		>div{width:60vw;
-			margin: 20px 3vw}}
 		&-part6>div>ul>li{width: 25%}
 	}
 	

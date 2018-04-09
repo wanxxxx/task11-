@@ -25,14 +25,15 @@
 .padding-h {
   padding: 10px 0; }
 
+.size-l {
+  font-size: 14px;
+  font-weight: bold; }
+
 .size-m {
-  font-size: 14px; }
+  font-size: 13px; }
 
 .size-s {
-  font-size: 12px; }
-
-.size-l {
-  font-size: 16px; }
+  font-size: 10px; }
 
 .center-y {
   position: absolute;
@@ -45,7 +46,7 @@
   transform: translatex(-50%); }
 
 .s {
-  box-shadow: 0 0 5px #888888; }
+  box-shadow: 0 0 3px #ccc; }
 
 .gr {
   color: #29b078; }
