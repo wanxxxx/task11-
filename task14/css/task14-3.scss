@@ -2,7 +2,7 @@
 %wh{width: 270px;height: 380px}
 .main{hr{margin: 20px 0;}
 	>div{width: 70vw;margin: 20px 15vw;}
-	&-div1>div{width: 150px;justify-content: space-between;}
+	&-div1>div{width: 100px;justify-content: space-between;}
 	&-div2{
 		display: flex;align-self: flex-start;flex-wrap: wrap;
 		.active{background: $gr;color: #fff;}
@@ -36,6 +36,7 @@
 					>div:nth-child(2){margin:0 5px}
 					
 				}}
+			.center{color: #000;}
 			.table2{color: #000;
 				>div{
 					display: flex;

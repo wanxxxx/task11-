@@ -87,7 +87,8 @@ body {
     .header-part2 > div:nth-of-type(1) {
       width: 400px;
       right: 15vw;
-      color: #fff; }
+      color: #fff;
+      font-size: 16px; }
       .header-part2 > div:nth-of-type(1) .active, .header-part2 > div:nth-of-type(1) a:hover {
         border-bottom-color: #fff; }
       .header-part2 > div:nth-of-type(1) a {
@@ -153,24 +154,34 @@ body {
   overflow: hidden; }
 
 .footer {
-  background: #29b078;
   color: white;
-  flex-wrap: wrap;
-  padding: 10px 15vw;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between; }
-  .footer > div:nth-child(1) > p {
-    line-height: 50px; }
-  .footer > div:nth-child(2) > p {
-    line-height: 25px; }
-  .footer > div:nth-child(3) > p {
-    line-height: 30px; }
-  .footer > div .p2 {
-    margin-top: 30px; }
-  @media screen and (max-width: 800px) {
-    .footer > div {
-      width: 70vw; } }
+  background: #29b078; }
+  .footer-div1 {
+    flex-wrap: wrap;
+    padding: 10px 15vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .footer-div1 > div {
+      height: 104px; }
+      .footer-div1 > div:nth-child(1) > p {
+        line-height: 50px; }
+      .footer-div1 > div:nth-child(2) > p {
+        line-height: 25px; }
+      .footer-div1 > div:nth-child(3) > p {
+        line-height: 30px; }
+  .footer .p2 {
+    height: 35px;
+    border-top: 1px solid #BAD1B0;
+    width: 100%;
+    background: #29b078; }
+    .footer .p2 > p {
+      margin: 2px 10px; }
+  @media screen and (max-width: 900px) {
+    .footer > div > div {
+      width: 70vw; }
+    .footer .p2 {
+      flex-direction: column; } }
 
 body > img {
   width: 100vw;
@@ -188,7 +199,7 @@ body > img {
       background: #fff;
       border: 1px solid #ccc; }
     .main-div2 > div:nth-child(1) {
-      width: 120px; }
+      width: 180px; }
       .main-div2 > div:nth-child(1) ul {
         color: #29b078; }
         .main-div2 > div:nth-child(1) ul li {
@@ -209,7 +220,7 @@ body > img {
     .main-div2 > div:nth-child(2) {
       width: 650px;
       background: #fff;
-      color: #ccc;
+      color: #A0A0A0;
       height: auto; }
       .main-div2 > div:nth-child(2) p {
         text-indent: 2em;

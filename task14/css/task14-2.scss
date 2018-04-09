@@ -7,7 +7,7 @@ body>img{width: 100vw;height:auto;}
 		&-div2{width: 70vw;align-items: flex-start;
 			>div{background: #fff;border: $border;}
 				>div:nth-child(1){
-					width: 120px;
+					width: 180px;
 					ul{color: $gr;
 						li{@extend .center;width: 100%;
 							margin-bottom: 20px;
@@ -24,7 +24,7 @@ body>img{width: 100vw;height:auto;}
 					}
 						}
 				>div:nth-child(2){
-				width: 650px;background: #fff;color: #ccc;height: auto;
+				width: 650px;background: #fff;color: #A0A0A0;height: auto;
 				
 				
 				p{text-indent: 2em;line-height: 1.5em;margin: 1em 0;}

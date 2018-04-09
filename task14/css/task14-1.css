@@ -88,7 +88,7 @@ body {
       width: 400px;
       right: 15vw;
       color: #fff;
-      font-size: 18px; }
+      font-size: 16px; }
       .header-part2 > div:nth-of-type(1) .active, .header-part2 > div:nth-of-type(1) a:hover {
         border-bottom-color: #fff; }
       .header-part2 > div:nth-of-type(1) a {
