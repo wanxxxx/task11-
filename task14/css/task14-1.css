@@ -60,9 +60,10 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #fff; }
+    background: #fff;
+    z-index: 2; }
     .labels > label:hover {
-      background: #ccc; }
+      background: #29b078; }
 
 body {
   background: #EEEEEE; }
@@ -260,7 +261,7 @@ body {
     bottom: 0; }
   .main-part4-slide {
     width: 9999px;
-    height: 300px;
+    height: 340px;
     transition: all 0.1s; }
     .main-part4-slide > div {
       width: 70vw;
@@ -274,9 +275,8 @@ body {
         border-radius: 5px; }
         .main-part4-slide > div > div > div {
           margin: 15px 15px; }
-          p
           .main-part4-slide > div > div > div:nth-child(3) {
-            color: #ccc; }
+            color: #666; }
 .main-part5 {
   background: #fff;
   margin-bottom: 100px; }

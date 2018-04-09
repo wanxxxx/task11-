@@ -76,7 +76,8 @@ $border:1px solid #ccc;
 				>label{
 				@include ci;
 				background: #fff;
-				&:hover{background: #ccc;}}}
+					z-index: 2;
+				&:hover{background:$gr;}}}
 //
 body{	background: #EEEEEE;
  }

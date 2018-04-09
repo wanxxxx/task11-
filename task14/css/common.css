@@ -60,9 +60,10 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #fff; }
+    background: #fff;
+    z-index: 2; }
     .labels > label:hover {
-      background: #ccc; }
+      background: #29b078; }
 
 body {
   background: #EEEEEE; }
