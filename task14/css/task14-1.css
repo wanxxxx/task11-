@@ -284,7 +284,7 @@ body {
     height: 150px;
     background: #fff;
     width: 250px;
-    margin: 0 2px; }
+    margin: 2px; }
 .main-part6 {
   background: #fff; }
   .main-part6 > div {
@@ -313,12 +313,8 @@ body {
     flex-wrap: wrap; }
     .main-part4-slide > div > div {
       margin: 10px 3vw; }
-  .main-part5 {
-    width: 40vw !important;
-    margin: 100px 30vw 0 30vw !important; }
-    .main-part5 > div {
-      width: 40vw;
-      margin: 1px 0; }
+  .main-part5 > div {
+    width: 70vw; }
   .main-part6 > div > ul > li {
     width: 20%; } }
 @media screen and (max-width: 900px) {

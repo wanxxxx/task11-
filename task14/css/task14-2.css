@@ -236,4 +236,6 @@ body > img {
     align-items: center; }
     .main-div2 > div {
       width: 70vw !important;
-      margin: 20px 0; } }
+      margin: 20px 0; }
+    .main-div2 .div2-a {
+      flex-direction: column; } }
